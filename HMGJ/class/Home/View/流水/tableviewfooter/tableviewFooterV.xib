@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="lliushuiFooterView" customModule="HMGJ" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="517" height="131"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017年8月31日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epV-zs-Anc">
+                    <rect key="frame" x="10" y="57" width="110" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="110" id="Lrm-vi-nwW"/>
+                        <constraint firstAttribute="height" constant="17" id="pv7-xQ-1gO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="共30笔" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNo-wk-vvE">
+                    <rect key="frame" x="120" y="57" width="70" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="B45-Wf-jnc"/>
+                        <constraint firstAttribute="height" constant="17" id="ZvO-aD-oMs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收入￥900.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ae-D5-KmA">
+                    <rect key="frame" x="190" y="57.5" width="197" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="Fgo-Qe-DIN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支￥900.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UOJ-1V-cHF">
+                    <rect key="frame" x="387" y="57" width="120" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="1qu-DC-u0K"/>
+                        <constraint firstAttribute="height" constant="17" id="p9F-78-bgC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="iNo-wk-vvE" firstAttribute="leading" secondItem="epV-zs-Anc" secondAttribute="trailing" id="3mD-VB-OeT"/>
+                <constraint firstAttribute="trailing" secondItem="UOJ-1V-cHF" secondAttribute="trailing" constant="10" id="BXD-Z2-xW6"/>
+                <constraint firstItem="iNo-wk-vvE" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Iff-bE-FAk"/>
+                <constraint firstItem="UOJ-1V-cHF" firstAttribute="leading" secondItem="8Ae-D5-KmA" secondAttribute="trailing" id="WNj-iY-Y1Q"/>
+                <constraint firstItem="UOJ-1V-cHF" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="YJs-Oo-8VH"/>
+                <constraint firstItem="8Ae-D5-KmA" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ZSL-yR-rRe"/>
+                <constraint firstItem="epV-zs-Anc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="gaJ-Na-kMQ"/>
+                <constraint firstItem="epV-zs-Anc" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="pah-wT-EMf"/>
+                <constraint firstItem="8Ae-D5-KmA" firstAttribute="leading" secondItem="iNo-wk-vvE" secondAttribute="trailing" id="qc9-cZ-e8I"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="SpendingLabel" destination="UOJ-1V-cHF" id="FrJ-sX-wbA"/>
+                <outlet property="incomeLabel" destination="8Ae-D5-KmA" id="QJr-Ev-QTd"/>
+                <outlet property="numberLabel" destination="iNo-wk-vvE" id="mJ6-CI-lUj"/>
+                <outlet property="timeLabel" destination="epV-zs-Anc" id="8R2-yH-vF1"/>
+            </connections>
+            <point key="canvasLocation" x="182.5" y="152.5"/>
+        </view>
+    </objects>
+</document>

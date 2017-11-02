@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Rigster Success Table View Controller-->
+        <scene sceneID="Dx4-mY-R83">
+            <objects>
+                <tableViewController storyboardIdentifier="rigsterSuccessVC" id="Dms-db-Afz" customClass="rigsterSuccessTableViewController" customModule="HMGJ" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ov1-LM-5xE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="X4t-xN-0sg">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="63" id="Srk-lu-dbw">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="63"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Srk-lu-dbw" id="9cy-Fi-94z">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="63"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="126" id="DZe-b2-dnR">
+                                        <rect key="frame" x="0.0" y="63" width="375" height="126"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DZe-b2-dnR" id="2lX-ej-txw">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="126"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你的消息提交成功，我们将在2个工作日内对你的信息进行审核。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBm-Cu-IgM">
+                                                    <rect key="frame" x="10" y="10" width="355" height="42"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="42" id="Pxg-lK-Eof"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="审核通过后，你可以通过你的手机号登陆系统，登陆密码将在你的手机上。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpB-8c-b5N">
+                                                    <rect key="frame" x="10" y="62" width="355" height="42"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="42" id="yfI-8J-Yad"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="zBm-Cu-IgM" firstAttribute="leading" secondItem="2lX-ej-txw" secondAttribute="leading" constant="10" id="DRR-6m-EUW"/>
+                                                <constraint firstItem="fpB-8c-b5N" firstAttribute="leading" secondItem="2lX-ej-txw" secondAttribute="leading" constant="10" id="TOt-Tw-dOB"/>
+                                                <constraint firstItem="fpB-8c-b5N" firstAttribute="top" secondItem="zBm-Cu-IgM" secondAttribute="bottom" constant="10" id="WCt-Ox-5Kb"/>
+                                                <constraint firstAttribute="trailing" secondItem="fpB-8c-b5N" secondAttribute="trailing" constant="10" id="jnR-yH-Ja4"/>
+                                                <constraint firstItem="zBm-Cu-IgM" firstAttribute="top" secondItem="2lX-ej-txw" secondAttribute="top" constant="10" id="kkA-5P-UnU"/>
+                                                <constraint firstAttribute="trailing" secondItem="zBm-Cu-IgM" secondAttribute="trailing" constant="10" id="uab-Rb-fiD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="Wh5-B3-cE6">
+                                        <rect key="frame" x="0.0" y="189" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wh5-B3-cE6" id="CH2-fd-9IW">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FcG-Yy-dyB">
+                                                    <rect key="frame" x="10" y="10" width="355" height="30"/>
+                                                    <color key="backgroundColor" red="1" green="0.14959081090000001" blue="0.0086397835220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="V7S-7U-9I4"/>
+                                                    </constraints>
+                                                    <state key="normal" title="返回登陆">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="FcG-Yy-dyB" firstAttribute="leading" secondItem="CH2-fd-9IW" secondAttribute="leading" constant="10" id="0z2-rM-3J5"/>
+                                                <constraint firstItem="FcG-Yy-dyB" firstAttribute="top" secondItem="CH2-fd-9IW" secondAttribute="top" constant="10" id="D8v-5d-H2I"/>
+                                                <constraint firstAttribute="trailing" secondItem="FcG-Yy-dyB" secondAttribute="trailing" constant="10" id="Krf-TQ-KCi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Dms-db-Afz" id="M6h-OI-4Mh"/>
+                            <outlet property="delegate" destination="Dms-db-Afz" id="AS8-0V-nXc"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="backBtn" destination="FcG-Yy-dyB" id="sRy-PV-kcv"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5gJ-zh-wXC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="68" y="177.66116941529236"/>
+        </scene>
+    </scenes>
+</document>

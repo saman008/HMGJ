@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="reportDanTimeCollectionViewCell" customModule="HMGJ" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="340" height="149"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="340" height="149"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5h1-FX-obc">
+                        <rect key="frame" x="10" y="10" width="80" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="6Ra-jN-F1P"/>
+                            <constraint firstAttribute="height" constant="50" id="YcX-ma-jC7"/>
+                        </constraints>
+                        <state key="normal" title="按日统计">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUE-PX-WLG">
+                        <rect key="frame" x="100" y="10" width="80" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="Lgr-2K-BBa"/>
+                            <constraint firstAttribute="height" constant="50" id="mKd-i8-GK0"/>
+                        </constraints>
+                        <state key="normal" title="按月统计">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8l-tE-nuK">
+                        <rect key="frame" x="10" y="70" width="320" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Xip-rY-FDa"/>
+                        </constraints>
+                        <state key="normal" title="_年_月_日">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="5h1-FX-obc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="7nl-ZY-lJy"/>
+                <constraint firstItem="MUE-PX-WLG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="9eL-nP-Ogp"/>
+                <constraint firstAttribute="trailing" secondItem="m8l-tE-nuK" secondAttribute="trailing" constant="10" id="H9K-OS-vZN"/>
+                <constraint firstItem="MUE-PX-WLG" firstAttribute="leading" secondItem="5h1-FX-obc" secondAttribute="trailing" constant="10" id="TAD-Kq-Kt2"/>
+                <constraint firstItem="5h1-FX-obc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="nMG-Sa-Rfg"/>
+                <constraint firstItem="m8l-tE-nuK" firstAttribute="top" secondItem="MUE-PX-WLG" secondAttribute="bottom" constant="10" id="p2w-k7-h7u"/>
+                <constraint firstItem="m8l-tE-nuK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="tm4-DX-TZe"/>
+            </constraints>
+            <size key="customSize" width="340" height="149"/>
+            <connections>
+                <outlet property="daysBtn" destination="5h1-FX-obc" id="c4C-E4-MeA"/>
+                <outlet property="monthBtn" destination="MUE-PX-WLG" id="h91-bl-vO5"/>
+                <outlet property="timeBtn" destination="m8l-tE-nuK" id="Xeu-k0-Ell"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="135.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="pushtotailView" customModule="HMGJ" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YqM-2t-la8">
+                    <rect key="frame" x="50" y="0.0" width="325" height="667"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bM-Bn-rtm">
+                            <rect key="frame" x="0.0" y="617" width="325" height="50"/>
+                            <color key="backgroundColor" red="1" green="0.14959081090000001" blue="0.0086397835220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="Tvv-PA-DhK"/>
+                            </constraints>
+                            <state key="normal" title="完成">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="4bM-Bn-rtm" secondAttribute="bottom" id="IJU-gh-7P9"/>
+                        <constraint firstItem="4bM-Bn-rtm" firstAttribute="leading" secondItem="YqM-2t-la8" secondAttribute="leading" id="nd4-dE-7AX"/>
+                        <constraint firstAttribute="trailing" secondItem="4bM-Bn-rtm" secondAttribute="trailing" id="ozx-Lc-mWj"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="YqM-2t-la8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3RH-Lw-dKl"/>
+                <constraint firstAttribute="bottom" secondItem="YqM-2t-la8" secondAttribute="bottom" id="Heb-vm-MS5"/>
+                <constraint firstItem="YqM-2t-la8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="i4U-pM-okr"/>
+                <constraint firstAttribute="trailing" secondItem="YqM-2t-la8" secondAttribute="trailing" id="xtc-2s-EyS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bonsd" destination="i4U-pM-okr" id="3ou-h3-pHM"/>
+                <outlet property="okBtn" destination="4bM-Bn-rtm" id="xUC-nl-W0q"/>
+                <outlet property="view1" destination="YqM-2t-la8" id="MTV-bj-OHD"/>
+            </connections>
+            <point key="canvasLocation" x="100.5" y="124.5"/>
+        </view>
+    </objects>
+</document>

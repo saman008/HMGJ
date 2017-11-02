@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="87" id="KGk-i7-Jjw" customClass="withmonyDetailTableViewCell" customModule="HMGJ" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="470" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="470" height="86.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="07-18" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="For-lk-M4v">
+                        <rect key="frame" x="10" y="10" width="100" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="0Sc-Sv-V7c"/>
+                            <constraint firstAttribute="height" constant="21" id="W5O-eA-IdC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017年" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="joH-hT-ZqE">
+                        <rect key="frame" x="10" y="41" width="100" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="YFf-me-ZjS"/>
+                            <constraint firstAttribute="width" constant="100" id="sHH-qu-UDI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-100,000.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMH-hs-Tr1">
+                        <rect key="frame" x="110" y="10" width="290" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="yr3-eG-SgB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="交易成功" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVv-d9-mVJ">
+                        <rect key="frame" x="400" y="10" width="60" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="4BU-dE-Eh7"/>
+                            <constraint firstAttribute="height" constant="21" id="Uy6-PR-oxc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="转入到招商银行" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rJz-PZ-ohA">
+                        <rect key="frame" x="110" y="41" width="350" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="h2S-lC-6cn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rJz-PZ-ohA" firstAttribute="top" secondItem="cMH-hs-Tr1" secondAttribute="bottom" constant="10" id="1M8-VS-oKl"/>
+                    <constraint firstItem="lVv-d9-mVJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="4o5-lx-iAY"/>
+                    <constraint firstItem="rJz-PZ-ohA" firstAttribute="leading" secondItem="joH-hT-ZqE" secondAttribute="trailing" id="9Iu-2o-Ix0"/>
+                    <constraint firstAttribute="trailing" secondItem="lVv-d9-mVJ" secondAttribute="trailing" constant="10" id="HRI-Lr-0PW"/>
+                    <constraint firstItem="For-lk-M4v" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="JsW-UC-Lxv"/>
+                    <constraint firstItem="lVv-d9-mVJ" firstAttribute="leading" secondItem="cMH-hs-Tr1" secondAttribute="trailing" id="KGI-eU-Exq"/>
+                    <constraint firstItem="joH-hT-ZqE" firstAttribute="top" secondItem="For-lk-M4v" secondAttribute="bottom" constant="10" id="Qlg-DA-X4k"/>
+                    <constraint firstAttribute="trailing" secondItem="rJz-PZ-ohA" secondAttribute="trailing" constant="10" id="SyN-B5-wNn"/>
+                    <constraint firstItem="cMH-hs-Tr1" firstAttribute="leading" secondItem="For-lk-M4v" secondAttribute="trailing" id="TOw-9d-OBe"/>
+                    <constraint firstItem="cMH-hs-Tr1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="agt-CE-3dR"/>
+                    <constraint firstItem="joH-hT-ZqE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="cVr-p8-bJa"/>
+                    <constraint firstItem="For-lk-M4v" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="nHz-xF-E5C"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="DetailLabel" destination="rJz-PZ-ohA" id="HOy-yK-1aL"/>
+                <outlet property="dayLabel" destination="joH-hT-ZqE" id="NAp-yQ-4xV"/>
+                <outlet property="hourLabel" destination="For-lk-M4v" id="L4K-RK-yfz"/>
+                <outlet property="moneyLabel" destination="cMH-hs-Tr1" id="06s-U5-4YJ"/>
+                <outlet property="sucssLabel" destination="lVv-d9-mVJ" id="Ruh-ka-6wb"/>
+            </connections>
+            <point key="canvasLocation" x="6" y="66.5"/>
+        </tableViewCell>
+    </objects>
+</document>

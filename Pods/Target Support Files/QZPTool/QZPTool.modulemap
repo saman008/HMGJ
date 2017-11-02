@@ -1,0 +1,6 @@
+framework module QZPTool {
+  umbrella header "QZPTool-umbrella.h"
+
+  export *
+  module * { export * }
+}

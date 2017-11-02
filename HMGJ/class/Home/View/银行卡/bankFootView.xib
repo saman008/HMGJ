@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="footView" customModule="HMGJ" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="86"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BIQ-49-pCY">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="86"/>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="添加" translatesAutoresizingMaskIntoConstraints="NO" id="Vcx-Fd-RTM">
+                    <rect key="frame" x="30" y="33" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="Jpd-Xe-X22"/>
+                        <constraint firstAttribute="height" constant="20" id="PGM-mR-Hyb"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="添加银行卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IU1-HN-4ZV">
+                    <rect key="frame" x="60" y="34.5" width="305" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="v99-92-K0X"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="BIQ-49-pCY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="34E-KI-CiO"/>
+                <constraint firstItem="Vcx-Fd-RTM" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="B7o-Vy-fvj"/>
+                <constraint firstItem="IU1-HN-4ZV" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="JFi-ju-03f"/>
+                <constraint firstAttribute="trailing" secondItem="BIQ-49-pCY" secondAttribute="trailing" id="Orx-om-Wtx"/>
+                <constraint firstAttribute="trailing" secondItem="IU1-HN-4ZV" secondAttribute="trailing" constant="10" id="VIL-JJ-8eg"/>
+                <constraint firstItem="BIQ-49-pCY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fqL-Pi-Xh6"/>
+                <constraint firstItem="IU1-HN-4ZV" firstAttribute="leading" secondItem="Vcx-Fd-RTM" secondAttribute="trailing" constant="10" id="gJq-1z-fZL"/>
+                <constraint firstAttribute="bottom" secondItem="BIQ-49-pCY" secondAttribute="bottom" id="h9s-kv-mKO"/>
+                <constraint firstItem="Vcx-Fd-RTM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="s2V-tp-8r3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addBtn" destination="BIQ-49-pCY" id="RB7-GF-ZdR"/>
+            </connections>
+            <point key="canvasLocation" x="25.5" y="342"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="添加" width="15" height="15"/>
+    </resources>
+</document>

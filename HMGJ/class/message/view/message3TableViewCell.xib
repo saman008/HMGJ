@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="message3TableViewCell" customModule="HMGJ" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="415" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="415" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H1t-46-IfP">
+                        <rect key="frame" x="365" y="29" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="PVY-ku-LQj"/>
+                            <constraint firstAttribute="width" constant="40" id="dgR-8S-cb7"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJI-oe-Nxf">
+                        <rect key="frame" x="10" y="30.5" width="355" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="c2V-0t-zlR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="H1t-46-IfP" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="21k-ua-UFm"/>
+                    <constraint firstAttribute="trailing" secondItem="H1t-46-IfP" secondAttribute="trailing" constant="10" id="AOV-ba-ZcX"/>
+                    <constraint firstItem="H1t-46-IfP" firstAttribute="leading" secondItem="OJI-oe-Nxf" secondAttribute="trailing" id="PFD-bu-K0h"/>
+                    <constraint firstItem="OJI-oe-Nxf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Ubn-70-P0V"/>
+                    <constraint firstItem="OJI-oe-Nxf" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="gSq-BA-z72"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgImageView" destination="H1t-46-IfP" id="i8b-xv-Xz3"/>
+                <outlet property="titleLabel" destination="OJI-oe-Nxf" id="fSF-h2-N8r"/>
+            </connections>
+            <point key="canvasLocation" x="79.5" y="107"/>
+        </tableViewCell>
+    </objects>
+</document>

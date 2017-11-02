@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Wait Table View Controller-->
+        <scene sceneID="Qv9-nm-anP">
+            <objects>
+                <tableViewController storyboardIdentifier="waitVC" id="puk-06-cHA" customClass="waitTableViewController" customModule="HMGJ" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Z0f-Yq-njy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="zCc-p5-5l8">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="672" id="pSh-lb-0MW">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="672"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pSh-lb-0MW" id="fyo-Nz-bww">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="671.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fHo-1w-Leq">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="671.5"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="fHo-1w-Leq" secondAttribute="trailing" id="766-cy-9Zh"/>
+                                                <constraint firstItem="fHo-1w-Leq" firstAttribute="leading" secondItem="fyo-Nz-bww" secondAttribute="leading" id="Rlo-Zc-QpH"/>
+                                                <constraint firstAttribute="bottom" secondItem="fHo-1w-Leq" secondAttribute="bottom" id="kez-Pb-ljA"/>
+                                                <constraint firstItem="fHo-1w-Leq" firstAttribute="top" secondItem="fyo-Nz-bww" secondAttribute="top" id="zUL-vg-fz0"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="puk-06-cHA" id="gmA-Yp-6Cz"/>
+                            <outlet property="delegate" destination="puk-06-cHA" id="luA-pZ-PJE"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="waitView" destination="fHo-1w-Leq" id="Oro-iA-Rrx"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X0b-fe-o95" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="80.799999999999997" y="147.97601199400302"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,36 @@
+//
+//  PrefixHeader.pch
+//  Epay
+//
+//  Created by disancheng on 2017/5/22.
+//  Copyright © 2017年 qzp. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "QZPToolHeader.h"
+//#import "ReactiveObjC.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import "Config.h"
+#import <MJRefresh/MJRefresh.h>
+#import "NSObject+HUD.h"
+#import <MBProgressHUD/MBProgressHUD.h>
+#import "AppMacro.h"
+#import "NotificationMarco.h"
+#import "ThirdParyMarco.h"
+#import "UserDefaultMarco.h"
+#import "HttpRequest.h"
+#import <YTKKeyValueStore/YTKKeyValueStore.h>
+#import <YYModel/YYModel.h>
+#import "SMProgressHUD.h"
+#import "AppManager.h"
+#import <YYWebImage/YYWebImage.h>
+#import "CHSheet.h"
+#import "Epay.h"
+#import "TypedefMacro.h"
+#import <CHImagePicker/CHImagePicker.h>
+
+#endif /* PrefixHeader_pch */
